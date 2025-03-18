@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Screenshotes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screenshotes</title>
 </head>
 <body>
-    <img src="Connect.png" alt="Connect">
-    <img src="ping.png" alt="ping">
+  <h1>Задание 1</h1>
+
+  <div class="gallery">
+    <p>1. Получить от преподавателя на практике логин и пароль доступа к учебному серверу kubsu-dev.ru. Подключиться к нему по SSH с помощью клиента Putty, команды ssh или онлайн-версии ssh-клиента.</p>
+    <br><img src="Putty.png"><p>Подключаемся к серверу с помощью программы PuTTY. Вводим host name или IP адрес. Используем порт 58528</p>
+    <br><img src="Connect.png" alt="Connect">
+    <br><p>2. С помощью команды ping на учебном сервере узнать IP-адрес веб-сервера kubsu.ru, сделать скриншот вызова команды ping.</p>
+    <img src="ping.png" alt="Ping">
+    <br><p>Ping позволяет проверить подключение к другому компьютеру на уровне IP. Команда отправляет серию небольших пакетов данных на указанное устройство, а затем показывает время ответа.
+
+    </p> <br> <p>3. С помощью команды nslookup узнать A-записи и MX-записи домена kubsu.ru и kubsu-dev.ru</p>
     <img src="A.png" alt="A">
+    <br><p>А записи указывают на IPv4 адрес сервера, связанного с определенным доменным именем.</p><br>
     <img src="MX.png" alt="MX">
+    <br><p>С помощью команды nslookup -type=MX можно узнать MX-записи домена. Это записи, которые определяют, какие почтовые серверы ответственны за прием почты для данного домена. Они сообщают другим почтовым серверам, куда нужно доставлять электронную почту, отправленную на адреса в этом домене.</p>
+    <br><p>4. С помощью команды whois узнать дату регистрации домена kubsu.ru и kubsu-dev.ru</p><br>
     <img src="Whois.png" alt="Whois">
+    <br><p>5. Сгенерировали ssh ключ с помощью команды ssh-keygen -t rsa.</p><br>
+    <img src="keygen.png"><br>
+    <p>Далее склонировали репозитарий в папку www с помощью команды git clone.</p><br>
+    <img src="GitClone.png">
+    <br><p>6. С помощью программы FileZilla или любого другого клиента SFTP соединиться с учебным сервером с вашим логином и паролем по протоколу SFTP и скопировать на локальный компьютер файлы задания из каталога www.</p><br>
     <img src="FileZ.png" alt="Filezilla">
+    <br><p>Далее обновили скриншоты в index.html, и добавили их на учебный сервер, с помощью программы FileZilla</p>
+  </div>
+
 </body>
 </html>
